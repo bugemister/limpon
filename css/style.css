@@ -32,10 +32,31 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 3px;
 }
-.page-stat .title-h2{
+.title-40  {
+    font-size: 40px;
+    letter-spacing: -1.1px;
+    font-weight: 600;
+    color: #192b59;
+    line-height: 1.2;
+    
+   }
+   .title-40 span{
+    font-size: 18px;
+    margin-bottom: 20px;
+    letter-spacing: 3.5px;
+       display: block;
+       font-weight: 800;
+       color: #1085e4;
+       text-transform: uppercase;
+       
+   }
+.page-stat .title-h2, .page-screen .title-h2{
     text-align: center;
+    margin: 0 auto;  
+}
+
+.page-stat .title-h2{
     max-width: 500px;
-    margin: 0 auto;
 }
 .wrap {
    max-width: 1110px; 
@@ -138,25 +159,64 @@ display: block;
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-}
+    margin-bottom: 76px;
+} 
 .list-stat>li {
  font-size: 12px;
+ font-weight: 700;
  color: #1085e4;
  text-align: center;
  text-transform: uppercase;
- letter-spacing: 2.7px; 
+ letter-spacing: 2.7px;   
 }
 .list-stat>li>span{
-  display: block;
-font-size: 60px;
+  display: block; 
+font-size: 60px; 
 color: #bacbdc;
 margin-bottom: 23px;
 letter-spacing: 0;
 }
+.screen{
+    margin-top: 36px;
+ margin-bottom: -7px;
+}
+.box-price{
+    display: flex;
+    justify-content: space-between;
+}
+.box-price-item{
+    background-color: #f5faff;
+}
+.box-price-item.active h3 span:first-child{
+    color:#fff;
+}
+.box-price-item.active h3 span:last-child{
+    color: #7b8ab2;
+}
+.box-price-item.active{
+    color: #fff;
+    background-color:#192b59 ;
+}
+.box-price-item ul{
+    list-style-type:none ;
+    padding-left: 0;
+}
+
 /* PAGE */
-.page-stat{
+
+.page-stat, .page-screen{
+background-color:#edf6ff ;
 
 }
+.page-stat{
+padding: 116px 0 96px 0;
+    }
+  .page-plan, .page-screen{
+    text-align: center;
+    }
+    .page-screen{
+        padding: 116px 0 0 0;
+    }
 
 
 
