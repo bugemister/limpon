@@ -16,6 +16,13 @@ h1 {
     max-width: 600px;
     margin-bottom: 65px;
 }
+.logo {
+    display: block;
+    width:181px ;
+    height: 49px;
+    background-image:url(../img/logo.png);
+    
+}
 .title-h2  {
  font-size: 50px;
  font-weight: 600;
@@ -62,6 +69,55 @@ h1 {
    max-width: 1110px; 
    margin: 0 auto;
 }
+.box-header{
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  margin-bottom: 305px;
+}
+.screen-img{
+    display: block;
+    background-image: url(../img/screen.png);
+    background-repeat: no-repeat;
+    width: 895px;
+    height: 740px;
+    position: absolute;
+    right: 0;
+    top: 189px;
+
+}
+.list-company{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1110px; 
+   margin: 0 auto;
+}
+.list-company-item {
+    display: block
+}
+.company1{
+    background-image: url(../img/bg1.png);
+    flex-basis: 210px;
+    height: 64px;
+}
+.company2{
+    background-image: url(../img/bg2.png);
+    flex-basis: 200px;
+    height: 69px;
+}
+.company3{
+    background-image: url(../img/bg3.png);
+    flex-basis: 201px;
+    height: 47px;
+}
+.company4{
+    background-image: url(../img/bg4.png);
+    flex-basis: 185px;
+    height: 58px;
+}
 .nav{
     font-size:12px;
     font-weight:700;
@@ -74,10 +130,11 @@ h1 {
 }
 
 .nav>li {
-padding: 0 15px;
+padding: 0 20px;
 }
 .nav-item {
     color: #6e7ea9;
+    letter-spacing: 2px;
 
 }
 .btn-primary {
@@ -258,6 +315,20 @@ letter-spacing: 0;
 }
 
 /* PAGE */
+.page-header{
+    background-image: url(../img/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 53px 0 330px 0;
+    position: relative;
+}
+.page-company{
+    background-image: url(../img/Home-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 106px 0 99px;
+
+}
 
 .page-stat, .page-screen{
 background-color:#edf6ff ;
