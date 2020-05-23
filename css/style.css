@@ -156,6 +156,7 @@ padding: 0 20px;
     border: 1px solid #1085e4;
     padding: 20px 40px;
     border-radius: 30px;
+    transition: 0.3s;
 }
 .btn-primary:hover {
     color: #1085e4;
@@ -172,6 +173,7 @@ padding: 0 20px;
         border: 1px solid #cbdbe8;
         padding: 20px 40px;
         border-radius: 30px;
+        transition: 0.3s;
 }
 .btn-secondary:hover {
     color: #7e8bae;
@@ -193,6 +195,7 @@ padding: 0 20px;
         letter-spacing: 2.5px;
         padding: 20px 40px;
         border-radius: 30px;
+        transition: 0.3s;
 }
 .btn-info:hover{
     color: #fff;
@@ -218,31 +221,42 @@ grid-template-columns:lfr lfr lfr ;
 .grid-title{
     grid-area: a;
 }
-.grid-icon-1{
+.grid-item-1{
     grid-area: b;
 }
-.grid-icon-2{
+.grid-item-2{
     grid-area: c;
 }
-.grid-icon-3{
+.grid-item-3{
     grid-area: d;
 }
-.grid-icon-6{
+.grid-item-6{
     grid-area: e;
 }
-.grid-icon-4{
+.grid-item-4{
     grid-area: f;
 }
-.grid-icon-5{
+.grid-item-5{
     grid-area: g;
 }
 .grid-text{
     grid-area: h;
+    padding: 0 14px;
+}
+.grid-name{
+    font-size: 14px;
+    color: #1085e4;
+}
+.grid-name span{
+    font-size: 16px;
+    font-weight: 700;
+    color: #192b59;
 }
 .grid h2 {
 color: #192b59;
 font-weight: 700;
 font-size: 40px;
+margin-top: 0;
 }
 
 .grid h2 span{
@@ -253,7 +267,7 @@ display: block;
 .grid-item{
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0 9 25px #f4f4f4;
+    box-shadow: 0 9px 25px #f4f4f4;
     padding: 40px 29px 64px;
 }
 
@@ -305,11 +319,54 @@ display: block;
     background-size: 102px 87px;
 
 }
+/* page-softwere */
+.page-softwere-icon{
+    display: block;
+    background-image: url(../img/softwere-icon.png);
+    background-repeat: no-repeat;
+    background-position: 0;
+    width: 117px;
+    height: 98px;
+}
+.page-softwere-flex{
+    display: flex;
+    justify-content: flex-end;
+}
+.page-softwere-flex>div{
+    flex-basis: 55%;
+}
+
+.page-softwere .title-h2{
+max-width: 766px;
+margin-top: 12px;
+margin-bottom: 26px;
+}
+.page-softwere-list{
+   margin-top: 30px; 
+   height: 323px;
+   overflow: hidden;
+   overflow-y: scroll;
+}
+.page-softwere-list dt{
+    font-weight: 700;
+    color: #5a6789;
+    margin-bottom: 10px;
+ 
+}
+.page-softwere-list dd{
+ margin-left: 0;
+ margin-bottom: 50px;
+ font-size: 14px;
+ line-height: 1.8;
+}
+
+
 .list-stat {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
     margin-bottom: 76px;
+    padding: 0;
 } 
 .list-stat>li {
  font-size: 12px;
@@ -461,6 +518,9 @@ letter-spacing: 0;
 
 }
 
+.page-softwere{
+    padding: 109px 0 156px 0;
+}
 .page-stat, .page-screen{
 background-color:#edf6ff ;
 
