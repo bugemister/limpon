@@ -214,9 +214,11 @@ padding: 0 20px;
                          "e f g"
                          "e h h";
 grid-gap: 35px;
-grid-template-columns:lfr lfr lfr ;
+grid-template-columns:lfr lfr lfr;
  max-width: 1110px;
  margin: 0 auto;
+ position: relative;
+ overflow: hidden;
 }
 .grid-title{
     grid-area: a;
@@ -256,7 +258,7 @@ grid-template-columns:lfr lfr lfr ;
 color: #192b59;
 font-weight: 700;
 font-size: 40px;
-margin-top: 0;
+margin-top: 23px;
 }
 
 .grid h2 span{
@@ -337,7 +339,7 @@ display: block;
 }
 
 .page-softwere .title-h2{
-max-width: 766px;
+max-width: 560px;
 margin-top: 12px;
 margin-bottom: 26px;
 }
@@ -347,10 +349,15 @@ margin-bottom: 26px;
    overflow: hidden;
    overflow-y: scroll;
 }
+.page-softwere-list::-webkit-scrollbar { width: 15px; height: 4px;}
+.page-softwere-list::-webkit-scrollbar-button {  background-color: #1085e4; }
+.page-softwere-list::-webkit-scrollbar-track-piece { background-color: #f3f6ff;}
+.page-softwere-list::-webkit-scrollbar-thumb { height: 50px; background-color: #1085e4; border-radius: 10px;}
+
 .page-softwere-list dt{
     font-weight: 700;
     color: #5a6789;
-    margin-bottom: 10px;
+    margin-bottom: 9px;
  
 }
 .page-softwere-list dd{
@@ -520,6 +527,8 @@ letter-spacing: 0;
 
 .page-softwere{
     padding: 109px 0 156px 0;
+    position: relative;
+    overflow: hidden;
 }
 .page-stat, .page-screen{
 background-color:#edf6ff ;
@@ -535,7 +544,7 @@ padding: 116px 0 96px 0;
         padding: 116px 0 0 0;
     }
     .page-subscribe{
-        padding: 25px 0 28 0;
+        padding: 25px 0 28px 0;
         color: #fff;
         background: rgba(10,32,144,1);
 background: -moz-linear-gradient(45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
