@@ -65,6 +65,15 @@ h1 {
 .page-stat .title-h2{
     max-width: 500px;
 }
+.page-subscribe .title-h2{
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.page-subscribe .title-h2 span{
+    font-size: 25px;
+}
+
 .wrap {
    max-width: 1110px; 
    margin: 0 auto;
@@ -147,6 +156,7 @@ padding: 0 20px;
     border: 1px solid #1085e4;
     padding: 20px 40px;
     border-radius: 30px;
+    transition: 0.3s;
 }
 .btn-primary:hover {
     color: #1085e4;
@@ -163,6 +173,7 @@ padding: 0 20px;
         border: 1px solid #cbdbe8;
         padding: 20px 40px;
         border-radius: 30px;
+        transition: 0.3s;
 }
 .btn-secondary:hover {
     color: #7e8bae;
@@ -184,6 +195,7 @@ padding: 0 20px;
         letter-spacing: 2.5px;
         padding: 20px 40px;
         border-radius: 30px;
+        transition: 0.3s;
 }
 .btn-info:hover{
     color: #fff;
@@ -194,10 +206,57 @@ padding: 0 20px;
     margin-left: 15px;
 
 }
+.grid{
+    display: grid;
+    grid-template-areas: "a b c"
+                         "d b c"
+                         "d f g"
+                         "e f g"
+                         "e h h";
+grid-gap: 35px;
+grid-template-columns:lfr lfr lfr ;
+ max-width: 1110px;
+ margin: 0 auto;
+}
+.grid-title{
+    grid-area: a;
+}
+.grid-item-1{
+    grid-area: b;
+}
+.grid-item-2{
+    grid-area: c;
+}
+.grid-item-3{
+    grid-area: d;
+}
+.grid-item-6{
+    grid-area: e;
+}
+.grid-item-4{
+    grid-area: f;
+}
+.grid-item-5{
+    grid-area: g;
+}
+.grid-text{
+    grid-area: h;
+    padding: 0 14px;
+}
+.grid-name{
+    font-size: 14px;
+    color: #1085e4;
+}
+.grid-name span{
+    font-size: 16px;
+    font-weight: 700;
+    color: #192b59;
+}
 .grid h2 {
 color: #192b59;
 font-weight: 700;
 font-size: 40px;
+margin-top: 0;
 }
 
 .grid h2 span{
@@ -205,11 +264,18 @@ color:#1085e4;
 font-size: 14px;
 display: block;
 }
+.grid-item{
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 9px 25px #f4f4f4;
+    padding: 40px 29px 64px;
+}
 
 .grid-item h3{
     font-size: 20px;
     font-weight: 600;
     color: #192b59;
+    margin-bottom: 18px;
 }
 
 .grid-item a{   
@@ -217,11 +283,90 @@ display: block;
     color: #1085e4;
     font-weight: 600;
 }
+.grid-icon {
+    background-repeat: no-repeat;
+    display: block;
+    height: 92px;
+    margin: 0 auto 21px;
+    background-position: center;
+}
+.grid-icon-1{
+    background-image: url(../img/icon2.png);
+    background-size: 73px 79px;
+
+}
+.grid-icon-2{
+    background-image: url(../img/icon3.png);
+    background-size: 89px 85px;
+ 
+}
+.grid-icon-3{
+    background-image: url(../img/icon1.png);
+    background-size: 79px 82px;
+}
+.grid-icon-4{
+    background-image: url(../img/icon5.png);
+    background-size: 85px 90px;
+
+}
+.grid-icon-5{
+    background-image: url(../img/icon6.png);
+    background-size: 100px 87px;
+
+}
+.grid-icon-6{
+    background-image: url(../img/icon4.png);
+    background-size: 102px 87px;
+
+}
+/* page-softwere */
+.page-softwere-icon{
+    display: block;
+    background-image: url(../img/softwere-icon.png);
+    background-repeat: no-repeat;
+    background-position: 0;
+    width: 117px;
+    height: 98px;
+}
+.page-softwere-flex{
+    display: flex;
+    justify-content: flex-end;
+}
+.page-softwere-flex>div{
+    flex-basis: 55%;
+}
+
+.page-softwere .title-h2{
+max-width: 766px;
+margin-top: 12px;
+margin-bottom: 26px;
+}
+.page-softwere-list{
+   margin-top: 30px; 
+   height: 323px;
+   overflow: hidden;
+   overflow-y: scroll;
+}
+.page-softwere-list dt{
+    font-weight: 700;
+    color: #5a6789;
+    margin-bottom: 10px;
+ 
+}
+.page-softwere-list dd{
+ margin-left: 0;
+ margin-bottom: 50px;
+ font-size: 14px;
+ line-height: 1.8;
+}
+
+
 .list-stat {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
     margin-bottom: 76px;
+    padding: 0;
 } 
 .list-stat>li {
  font-size: 12px;
@@ -242,6 +387,7 @@ letter-spacing: 0;
     margin-top: 36px;
  margin-bottom: -7px;
 }
+
 .box-price{
     display: flex;
     justify-content: space-between;
@@ -313,6 +459,48 @@ letter-spacing: 0;
 .box-price-item.active::after{
     display: none;
 }
+.box-subscribe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-subscribe-text{
+    font-size: 18px;
+    max-width: 437px;
+}
+
+.box-subscribe-user{
+ position: relative;
+}
+.box-subscribe-child{
+  flex-basis: 49%;  
+}
+.box-subscribe-user input{
+    border: 2px solid #3f5cb1;
+    font-size: 14px;
+    color: #FFF;
+    border-radius: 45px;
+    background-color: transparent;
+    padding: 25px 230px 25px 37px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+.box-subscribe-user input:focus, .box-subscribe-user .btn-primary{
+    outline: none;
+}
+.box-subscribe-user .btn-primary{
+    position: absolute;
+    top: 9px;
+    right: 8px;
+    padding: 17px 50px;
+
+}
+
+    .box-subscribe-user input::-webkit-input-placeholder {color:#b1c3ee;}
+    .box-subscribe-user input::-moz-placeholder          {color:#b1c3ee;}
+    .box-subscribe-user input:-moz-placeholder           {color:#b1c3ee;}
+    .box-subscribe-user input:-ms-input-placeholder      {color:#b1c3ee;}  
 
 /* PAGE */
 .page-header{
@@ -330,6 +518,9 @@ letter-spacing: 0;
 
 }
 
+.page-softwere{
+    padding: 109px 0 156px 0;
+}
 .page-stat, .page-screen{
 background-color:#edf6ff ;
 
@@ -343,6 +534,19 @@ padding: 116px 0 96px 0;
     .page-screen{
         padding: 116px 0 0 0;
     }
+    .page-subscribe{
+        padding: 25px 0 28 0;
+        color: #fff;
+        background: rgba(10,32,144,1);
+background: -moz-linear-gradient(45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(10,32,144,1)), color-stop(100%, rgba(35,120,205,1)));
+background: -webkit-linear-gradient(45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+background: -o-linear-gradient(45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+background: -ms-linear-gradient(45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+background: linear-gradient(45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', endColorstr='#2378cd', GradientType=1 );
+    }
+
 
 
 
