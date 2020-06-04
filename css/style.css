@@ -73,9 +73,12 @@ h1 {
 .page-subscribe .title-h2 span{
     font-size: 25px;
 }
+.content-app .title-h2{
+  margin-bottom: 36px;  
+}
 
 .wrap {
-   max-width: 1110px; 
+    max-width: 1274px;
    margin: 0 auto;
 }
 .box-header{
@@ -184,6 +187,7 @@ padding: 0 20px;
     font-weight: 400;
     padding: 21px 56px;
     letter-spacing: 1.7px;
+    
 }
 .btn-info{
     color: #8085b1;
@@ -322,6 +326,21 @@ display: block;
 
 }
 /* page-softwere */
+
+
+
+
+.softwere-pic{
+    display: block;
+    width: 1208px;
+    height: 1043px;
+    background-image: url(../img/pic-softwere.png);
+    background-repeat: no-repeat;
+    background-position: -502px 11px;
+    position: absolute;
+    left: -26px;
+    bottom: -40px;
+}
 .page-softwere-icon{
     display: block;
     background-image: url(../img/softwere-icon.png);
@@ -335,7 +354,7 @@ display: block;
     justify-content: flex-end;
 }
 .page-softwere-flex>div{
-    flex-basis: 55%;
+    flex-basis: 47%;
 }
 
 .page-softwere .title-h2{
@@ -349,10 +368,10 @@ margin-bottom: 26px;
    overflow: hidden;
    overflow-y: scroll;
 }
-.page-softwere-list::-webkit-scrollbar { width: 15px; height: 4px;}
+.page-softwere-list::-webkit-scrollbar { width: 4px; height: 4px;}
 .page-softwere-list::-webkit-scrollbar-button {  background-color: #1085e4; }
 .page-softwere-list::-webkit-scrollbar-track-piece { background-color: #f3f6ff;}
-.page-softwere-list::-webkit-scrollbar-thumb { height: 50px; background-color: #1085e4; border-radius: 10px;}
+.page-softwere-list::-webkit-scrollbar-thumb { height: 40px; background-color: #1085e4; border-radius: 10px;}
 
 .page-softwere-list dt{
     font-weight: 700;
@@ -367,7 +386,48 @@ margin-bottom: 26px;
  line-height: 1.8;
 }
 
+/* page app*/
+.page-app-text{
+   font-size: 16px;
+   font-weight: 700;
+   text-transform: uppercase; 
+   color: #c4d2dd;
+   margin-top: 27px;
+   margin-bottom: 20px;
+   letter-spacing: 3px;
+}
+.page-app-list{
+    padding: 0;
+    list-style-type: none;
+}
+.page-app-list>li {
+    display:inline-block;
+}
 
+.page-app-list>li>a {
+    background-image: url(../img/app.png);
+    background-repeat: no-repeat;
+    display:block;
+    width: 185px;
+    height: 77px;
+}
+
+.page-app-list>li>a.page-app-android {
+    background-position: 0 0;
+
+}
+.page-app-list>li>a.page-app-ios {
+    background-position: -190px 0;
+
+}
+ .video-app{
+    position: absolute;
+    top: -61px;
+    right: -172px;
+}
+.content-app{
+    width:55% ;
+}
 .list-stat {
     display: flex;
     justify-content: space-around;
@@ -554,6 +614,18 @@ background: -o-linear-gradient(45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 1
 background: -ms-linear-gradient(45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
 background: linear-gradient(45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', endColorstr='#2378cd', GradientType=1 );
+    }
+
+    .page-app{
+        position: relative;
+        padding: 69px 0 82px 0;
+    }
+    .page-app .wrap{
+        position: relative;
+    }
+    .page-analytics{
+        background-image: url(../img/bg-analytics.png);
+
     }
 
 
